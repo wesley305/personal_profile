@@ -557,9 +557,21 @@
                             <!-- HERE COMES YOUR CONTENT -->
 
                             <!-- BEGIN UPLOAD BUTTON -->   
-                            <button type="button" class="btn btn-primary" onClick="$('#avatar-modal').modal('show');">Upload Avatar</button>
 
-                            <button type="button" class="btn btn-primary" onClick="$('#colored-header').modal('show');">Upload Background</button>
+                            <script>
+                                function upload_avatar() {
+
+                                    $('#avatar-modal').modal('show');
+                                }
+                                function upload_background() {
+
+                                    $('#colored-header').modal('show');
+                                }
+                            </script>
+
+                            <button type="button" class="btn btn-primary" onClick="upload_avatar();">Upload Avatar</button>
+
+                            <button type="button" class="btn btn-primary" onClick="upload_background();">Upload Background</button>
 
                             <link rel="stylesheet" href="../../cropper/dist/cropper.min.css">
                             <link rel="stylesheet" href="../../cropper/css/main.css">
